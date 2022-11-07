@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="factura.js"></script>
+  </head>
+  <body>
+    <label for="codifactura">Codi Factura:</label>
+    <p id="codifactura"></p>
+    <label for="article">Article:</label>
+    <select name="article" id="article">
+      <option value="alonso">Fernando Alonso</option>
+      <option value="sainz">Carlos Sainz</option>
+      <option value="max">Max Verstappen</option>
+      <option value="checo">Checo Perez</option>
+      <option value="norris">Lando Norris</option>
+      <option value="ricciardo">Daniel Ricciardo</option>
+      <option value="stroll">Lance Stroll</option>
+      <option value="tsunoda">Yuki Tsunoda</option>
+      <option value="leclerc">Charles Leclerc</option>
+      <option value="latifi">Nicolas Latifi</option>
+    </select>
+    <button type="button" onclick="addRow()">+</button>
+    <table id="taula">
+        <tr>
+          <th>Codi</th>
+          <th>Nom</th>
+          <th>Quantitat</th>
+          <th>Preu</th>
+          <th>Total</th>
+        </tr>
+    </table> 
+    <p id="total">Total:</p>  
+    <p id="iva">IVA:</p>  
+    <p id="totaliva">Total amb IVA:</p>  
+    <label for="cfactura">Codi factura:</label>
+    <input type="text" id="cfactura" name="cfactura">  
+    <button type="button" onclick="recuperar()">Recuperar</button>
+</body>
+</html>
+
